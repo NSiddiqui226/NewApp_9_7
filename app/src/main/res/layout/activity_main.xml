@@ -4,69 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginLeft="60dp"
-
     android:layout_marginRight="60dp"
-
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="214dp"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/topMargins"
+        android:layout_marginBottom="@dimen/bottomMargins"
         android:text="Welcome"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
+        android:textSize="21sp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="129dp"
         android:layout_height="wrap_content"
-        android:text="Log In"
-        android:textSize="21sp"
         android:layout_gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
+        android:layout_marginTop="@dimen/topMargins"
+        android:layout_marginBottom="@dimen/bottomMargins"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName1"
-        android:layout_width="269dp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/topMargins"
+        android:layout_marginBottom="@dimen/bottomMargins"
         android:ems="10"
         android:hint="Email"
-        android:textSize="@dimen/editTextSize"
-        android:layout_marginBottom="20dp"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="@dimen/editTextFontSize" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="269dp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/topMargins"
+        android:layout_marginBottom="@dimen/bottomMargins"
         android:ems="10"
-        android:textSize="@dimen/editTextSize"
         android:hint="Password"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="@dimen/editTextFontSize" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="156dp"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/topMargins"
+        android:layout_marginBottom="@dimen/bottomMargins"
+        android:background="@color/primaryLightColor"
+        android:text="enter" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="112dp"
-        android:layout_height="33dp"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
         android:layout_gravity="center"
-        android:background="@color/primaryLightColor"
-        android:text="enter" />
+        android:layout_marginTop="@dimen/topMargins"
+        android:layout_marginBottom="@dimen/bottomMargins"
+        android:background="@color/white"
+        android:text="clear" />
 
 </LinearLayout>
